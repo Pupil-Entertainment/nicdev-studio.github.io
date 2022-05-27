@@ -126,6 +126,64 @@
       color: rgb(211, 211, 54);
     }
 
+    NewsletterColor{
+      color: rgb(253, 202, 135);
+    }
+
+    input[type=Field], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    }
+
+input[type=Field] {
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(42, 32, 20);
+  font-size: 150%;
+  font-family: "Fredoka One";
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=Field]:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    }
+
+input[type=submit] {
+  width: 70%;
+  background-color: rgb(253, 202, 135);
+  color: rgb(42, 32, 20);
+  font-size: 150%;
+  font-family: "Fredoka One";
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(165, 123, 73);
+}
+
 </style>
 
 <body>
@@ -151,6 +209,22 @@
 <p>
   <iframe width="640" height="360" src="https://www.youtube.com/embed/YDxiISCn83Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+
+<h2><NewsletterColor>Subscribe</NewsletterColor> to my <NewsletterColor>Newsletter</NewsletterColor>!</h2>
+<p>By subscribing to my newsletter, you'll be able to get important E-mails from me about game releases, major updates, etc so you don't miss anything!</p>
+<p>Don't worry, I won't sent useless E-mails.</p>
+    <div id="revue-embed">
+      <form action="https://www.getrevue.co/profile/NicDev/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+      <div class="revue-form-group">
+        <input  class="revue-form-field" placeholder="Enter Your E-Mail Address..." type="Field" name="member[email]" id="member_email" size="75">
+      </div>
+      <div class="revue-form-actions">
+        <p><input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"></p>
+      </div>
+      <div class="revue-form-footer">By subscribing, you agree with Revue’s <a id="NewsColor" target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a id="NewsColor" target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+      </form>
+    </div>
+
 <p><h1><a id="GamesColor" href="Games">Games</a></h1></p>
 <p><h1><a id="LinkColor" href="Links">Links</a></h1></p>
 <p><h1><a id="BioColor" href="Bio">Bio</a></h1></p>
