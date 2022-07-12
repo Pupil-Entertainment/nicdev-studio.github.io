@@ -38,15 +38,32 @@
         font-family: "Fredoka One";
         text-align: center;
     }
+
+    hcountdown{
+      font-size: 35px;
+        font-family: "Fredoka One";
+        text-align: center;
+    }
     
-    p {
-      font-size: 20px;
+
+    Subtitle{
+      font-size: 25px;
     }
 
     .Explain{
       text-align: center;
       color: white;
-      font-size: 20px;
+      font-family: "Fredoka One";
+    }
+
+    HowItWorksTitle{
+      font-size: 50px;
+    }
+
+    .Instructions{
+      font-size: 30px;
+      text-align: left;
+      color: white;
       font-family: "Fredoka One";
     }
 
@@ -74,6 +91,22 @@
   width: 1000px;
   height: auto;
   margin: auto;
+    }
+
+    .countdown{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Fredoka One";
+      line-height: 3px;
+    }
+
+    .target{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Fredoka One";
+      line-height: 10px;
     }
 
     body{
@@ -122,8 +155,12 @@
       color: rgb(144, 176, 145);
     }
 
-    SubtitleColor{
-      color: rgb(116, 236, 116);
+    CountdownTitle{
+      color: rgb(193, 255, 193);
+    }
+
+    CountdownSubtitle{
+      color: rgb(213, 255, 237);
     }
 
     #GalleryColor{
@@ -136,6 +173,14 @@
 
     #OthersColor{
       color: rgb(254, 255, 175);
+    }
+
+    #NotFinished{
+      color: rgb(255, 172, 172);
+    }
+
+    #Finished{
+      color: rgb(176, 255, 185);
     }
 
     input[type=Field], select {
@@ -192,6 +237,68 @@ input[type=submit]:hover {
   background-color: rgb(165, 123, 73);
 }
 
+.button{
+  background-color: rgb(139, 159, 255);
+  font-family: "Fredoka One";
+  font-size: 35px;
+  text-shadow: -2px 2px rgb(95, 104, 148);
+  color: rgb(32, 36, 57);
+  width: 40%;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(115, 131, 211);
+  font-family: "Fredoka One";
+  font-size: 35px;
+  color: rgb(24, 27, 44);
+  text-shadow: -2px 2px rgb(81, 88, 124);
+  width: 40%;
+  height: 70px;
+  border-radius: 5px;
+}
+
+InstructionNumbers{
+  color: rgb(100, 228, 134);
+}
+
+#HowItWorksTitleColor{
+  color: rgb(255, 227, 174);
+}
+
+redtitle{
+  color: rgb(255, 133, 133);
+}
+
+orangetitle{
+  color: rgb(255, 212, 133);
+}
+
+yellowtitle{
+  color: rgb(251, 255, 133);
+}
+
+hijautitle{
+  color: rgb(133, 255, 139);
+}
+
+bluegreentitle{
+  color: rgb(133, 255, 247);
+}
+
+bluetitle{
+  color: rgb(133, 235, 255);
+}
+
+pinktitle{
+  color: rgb(251, 133, 255);
+}
+
+pink2title{
+  color: rgb(255, 133, 204);
+}
+
 </style>
 
 <body>
@@ -200,46 +307,43 @@ input[type=submit]:hover {
     <img src="Images/WebsiteBackground.png" class="TitleImage" alt="Header Image">
     <div class="ExplainBox">
     <div class="TitleText">
-      <h1>NicDev</h1>
-      <h3>An <SubtitleColor>Official Website of NicDev</h3></SubtitleColor>
-<p><div class="Explain">Hi, I'm NicDev! I'm a young indie game developer from Indonesia. I'm still learning game development now. Although they're not prefect, I still hope you enjoy them!</p>
+      <h1><redtitle>N</redtitle><orangetitle>i</orangetitle><yellowtitle>c</yellowtitle><hijautitle>S</hijautitle><bluegreentitle>h</bluegreentitle><bluetitle>i</bluetitle><pinktitle>r</pinktitle><pink2title>t</pink2title></h1>
+      <p><img src="Images/NicShirt.png"></img></p>
+<div class="Explain"><Subtitle>A merchandise pre-order based system where you can get yourself shirts with designs made by me!</Subtitle>
   <p>
-    <h2>My Latest <Orange>Officially Published Video Game</h2>
-  </p>
-  <img src="Images/StreamerSimulatorIndonesia.png" alt="Streamer Simulator Indonesia">
-    <p><a href="https://play.google.com/store/apps/details?id=com.kajewDev.StreamerSimulator"><img src="Images/AndroidDownload.png" style="width: 300px;height: 115px;" alt ="Download for Android in Google Play"></a></p>
+    <h2>1st <CountdownTitle>Pre-Order Campaign</CountdownTitle></h2>
 
-  <p>
-  <h2>My Latest <red>Video on YouTube</red></h2>
-</p>
+<div class="countdown">
+    <h1><div class="Countdown"> 00:00:00:00</div></h1>
+    <hcountdown><CountdownSubtitle>Days : Hours : Minutes : Seconds</CountdownSubtitle></hcountdown>
+    <script src="Countdown.js"></script>
 
-<p>
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/Bq8OqF3eN0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+  </div>
 
-<h2><NewsletterColor>Subscribe</NewsletterColor> to my <NewsletterColor>Newsletter</NewsletterColor>!</h2>
-<p>By subscribing to my newsletter, you'll be able to get important E-mails from me about game releases, major updates, etc so you don't miss anything!</p>
-<p>Don't worry, I won't sent useless E-mails.</p>
-    <div id="revue-embed">
-      <form action="https://www.getrevue.co/profile/NicDev/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-      <div class="revue-form-group">
-        <input  class="revue-form-field" placeholder="Enter Your E-Mail Address..." type="Field" name="member[email]" id="member_email" size="75">
-      </div>
-      <div class="revue-form-actions">
-        <p><input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"></p>
-      </div>
-      <div class="revue-form-footer">By subscribing, you agree with Revue’s <a id="NewsColor" target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a id="NewsColor" target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
-      </form>
-    </div>
+  &nbsp
 
-<p><h1><a id="GamesColor" href="Games">Games</a></h1></p>
-<p><h1><a id="LinkColor" href="Links">Links</a></h1></p>
-<p><h1><a id="BioColor" href="Bio">Bio</a></h1></p>
-<p><h1><a id="NewsColor" href="News">News</a></h1></h1></p>
-<p><h1><a id="OthersColor" href="Others">Others</a></h1></h1></p>
+
+  <div class="target">
+    <h1 id="NotFinished">0/3</h1>
+    <hcountdown>Shirts Have been Pre-Ordered!</hcountdown>
+    <p><a href=Bio.html><button class="button"> Pre-Order Shirts!</button></a></p>
+
+  </div>
+
+  &nbsp
+  
+  <div class="Explain">
+    -------------------------------------------------------------------------------------------------------------------
+<h2 id="HowItWorksTitleColor"><HowItWorksTitle>How Does it Works?</HowItWorksTitle></h2>
+  </div>
+
+  &nbsp
+
+  <div class="Instructions">
+    <p><InstructionNumbers>1)</InstructionNumbers>. Order the shirts here and contact me via whatsapp</p>
+    <p><InstructionNumbers>2)</InstructionNumbers>. When contacting me via whatsapp, you'll have to fill in some forms and infos such as product name, real name, address, payment, etc</p>
+    <p><InstructionNumbers>3)</InstructionNumbers>. When the countdown of this site has turned to 00:00:00:00 (Pre-order deadline) or the shirt's pre-order target have been reached, people who have ordered the shirts will be notified via whatsapp about the shirt's delivery</p>
+  </div>
+
 <p><h2>@2022 NicDev</h2></p>
-</iframe>
-</div>
-</div>
-</div>
 </body>
