@@ -36,14 +36,20 @@
     }
 
     producttitle{
-      font-size: 35px;
+      font-size: 45px;
       font-family: "Fredoka One";
       text-align: center;
       color: rgb(252, 255, 205);
     }
+
+    TinyExplanation{
+      font-size: 25px;
+      font-family: "Fredoka One";
+      text-align: center;
+    }
     
     p {
-      font-size: 20px;
+      font-size: 30px;
     }
 
     .Explain{
@@ -152,10 +158,15 @@
     }
 
     .column {
-  float: left;
-  width: 32%;
+  width: 45%;
   padding: 5px;
-  line-height: 16px;
+  line-height: 30px;
+  float: left;
+}
+
+.tinycolumn{
+  padding: 5px;
+  line-height: 15px;
 }
 
 /* Clearfix (clear floats) */
@@ -166,29 +177,25 @@
 }
 
 .button{
-  background-color: rgb(139, 159, 255);
+  background-color: rgb(98, 255, 143);
   font-family: "Fredoka One";
   font-size: 35px;
-  text-shadow: -2px 2px rgb(95, 104, 148);
+  text-shadow: -2px 2px rgb(77, 203, 178);
   color: rgb(32, 36, 57);
-  width: 80%;
+  width: 100%;
   height: 70px;
   border-radius: 5px;
 }
 
 .button:hover{
-  background-color: rgb(115, 131, 211);
+  background-color: rgb(86, 211, 121);
   font-family: "Fredoka One";
   font-size: 35px;
   color: rgb(24, 27, 44);
-  text-shadow: -2px 2px rgb(81, 88, 124);
-  width: 80%;
+  text-shadow: -2px 2px rgb(64, 162, 142);
+  width: 100%;
   height: 70px;
   border-radius: 5px;
-}
-
-img{
-border-radius: 30px;
 }
 
 </style>
@@ -199,28 +206,57 @@ border-radius: 30px;
     <img src="Images/NicShirt.png" class="TitleImage" alt="Header Image">
 
     <div class="Explain">
-<p><h1><TitleColor>Products</TitleColor></h1></p>
-<p><h3>This is all the products you can buy from me!</h3></p>
+<p><h1><TitleColor>Product</TitleColor></h1></p>
+<p><h3>Here is where you can start pre-ordering the product you want from me!</h3></p>
 <div class="row">
 
+
   <div class="column">
+  <img src="Images/NicdevDoodleTshirt.png" alt="NicDev Doodle T-Shirt" style="width:80%; top:10px ;border-radius: 30px" id="productimage">
+  <div class="row" style="margin-top: 15px;";>
+    <input type="image" src="Images/NicdevDoodleTshirt.png" alt="NicDev Doodle T-Shirt" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;  margin-left: 15px;" onclick="PreviewImage(0)">
+    <input type="image" src="Images/NicDevDoodleTshirtBack.png" alt="NicDev Doodle T-Shirt" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(1)">
+    <input type="image" src="Images/NicdevDoodleTshirt.png" alt="NicDev Doodle T-Shirt" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(2)">
+    <input type="image" src="Images/NicdevDoodleTshirt.png" alt="NicDev Doodle T-Shirt" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(3)">
+  </div>
   </div>
 
   <div class="column">
-  <img src="Images/NicdevDoodleTshirt.png" alt="NicDev Doodle T-Shirt" style="width:80%">
-  <p><producttitle><u>NicDev Doodle T-Shirt</u></producttitle></p>
-  <p><h2><PriceColor>Rp. 165.000</PriceColor></h2></p>
-  <p>(Belum termasuk ongkir)</p>
-  <p><a href=Products.html><button class="button"> More Info</button></a></p>
+    <div class="tinycolumn">
+    <p><h1><u><producttitle>NicDev Doodle T-Shirt</producttitle></u></h1></p>
+    <p><h2><PriceColor>Rp. 165.000</PriceColor></h1></p>
+      <p style="font-size: 20px;">(Belum termasuk ongkir)</p>
+    </div>
 
+    <p>A T-Shirt filled with doodles of NicDev's game characters in the back and his logo in the front. Perfect for his fans and supporters!</p>
+    <p><TinyExplanation>Printed DTG to a premium cotton T-Shirt, 100% cotton</TinyExplanation></p>
+    <p><a href=Products.html><button class="button"> Pre-Order via WhatsApp</button></a></p>
   </div>
-
-  <div class="column">
-  </div>
-
-
 </div>
 &nbsp
 <p><h2>@2022 NicDev</h2></p>
 </div>
 </body>
+
+<script>
+  
+  function PreviewImage(i) {
+    var Image = document.getElementById("productimage");
+    
+    if(i == 0)
+    {
+      Image.scr = "Images/NicDevDoodleTshirt.png";
+    }else if(i == 1)
+    {
+      
+      Image.scr = "Images/NicDevDoodleTshirtBack.png";
+    }else if(i == 2)
+    {
+      
+    }else if(i == 3)
+    {
+      
+    }
+  }
+
+</script>
