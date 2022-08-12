@@ -10,10 +10,10 @@
         country_code = country_code[1].split('tls=');
         country_code = country_code[0];
         
-        if(country_code != "ID")
+        if(country_code == "ID")
         {
           alert("Sorry, but NicShirt isn't available in your country yet. (" + country_code + ")");
-          location.replace("nicdevstudio.com");
+          window.location.replace("https://nicdevstudio.com/");
         }
       }
     };
