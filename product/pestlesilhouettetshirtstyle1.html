@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<head> 
+
+  <script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var country_code = this.responseText.replace(/(\r\n|\n|\r)/gm,"").split('loc=');
+        country_code = country_code[1].split('tls=');
+        country_code = country_code[0];
+        
+        if(country_code != "ID")
+        {
+          alert("Sorry, but NicShirt isn't available in your country yet. (" + country_code + ")");
+          window.location.replace("https://nicdevstudio.com/");
+        }
+      }
+    };
+    //OPEN HTTP Request
+    xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+    xhttp.send();
+  </script>
+
+<title> NicDev</title>
+<link rel="shortcut icon" type="image/png" href="Images/Yt Watermark.png">
+</div>
+
+</head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One">
+
+<meta charset="UTF-8">
+  <meta name="description" content="A site where you can Pre-Order a  NicDev Doodle T-Shirt">
+  <meta name="keywords" content="NicDev,NicDev Studio,Games,Game,Indie Game,Gamedev,Game Development,Website,Indonesia,Official Website,Nic,Developer,Product, Merch, Merchandise, Shirt, NicShirt, NicDevDoodlTshirt">
+  <meta name="author" content="NicDev">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://nicdevstudio.com/Images/BioProfile.png">
+
+<style>
+    h1 {
+      font-size: 75px;
+      font-family: "Fredoka One";
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 40px;
+      font-family: "Fredoka One";
+      text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-family: "Fredoka One";
+        text-align: center;
+    }
+
+    hsize{
+      font-size: 55px;
+        font-family: "Fredoka One";
+        text-align: center;
+    }
+
+    stylesize{
+      vertical-align: auto;
+      font-size: 40px;
+        font-family: "Fredoka One";
+    }
+
+    producttitle{
+      font-size: 44px;
+      font-family: "Fredoka One";
+      text-align: center;
+      color: rgb(252, 255, 205);
+    }
+
+    TinyExplanation{
+      font-size: 20px;
+      font-family: "Fredoka One";
+      text-align: center;
+    }
+    
+    p {
+      font-size: 30px;
+    }
+
+    .Explain{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Fredoka One";
+    }
+
+    PageButton{
+      color: white;
+      font-size: 40px;
+      font-family: "Fredoka One";
+      text-align: left;
+    }
+
+    .TitleImage{
+      background-image: url("../Images/WebsiteBackground.png");
+      background-color: #cccccc;
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+    }
+    
+    .TitleText{
+      text-align: center;
+      color: white;
+    }
+
+    .TextBox{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 25, 25));
+    }
+
+    .ExplainBox{
+  width: 1000px;
+  height: auto;
+  margin: auto;
+    }
+
+    body{
+      background-color: white;
+      background-image: url("../Images/NicDevBG.png");
+    }
+
+    video{
+      text-align: center;
+      position: absolute;
+    }
+
+    red{
+      color: red;
+    }
+
+    Orange{
+      color: orange;
+    }
+
+    #ItchColor{
+      color: rgb(236, 95, 102);
+      font-size: 50px;
+    }
+
+    #PlayStoreColor{
+      color: rgb(196, 245, 208);
+      font-size: 50px;
+    }
+
+    #YoutubeColor{
+      color: rgb(236, 33, 33);
+      font-size: 50px;
+    }
+
+    #InstagramColor{
+      color:violet;
+      font-size: 50px;
+    }
+    
+    #DiscordColor{
+      color:rgb(108, 117, 250);
+      font-size: 50px;
+    }
+
+    #MembershipColor{
+      color: rgb(236, 73, 73);
+      font-size: 50px;
+    }
+
+    TitleColor{
+      color:rgb(162, 174, 237);
+    }
+
+    LinkNote{
+      font-size: 125%;
+      bottom: -10px;
+    }
+
+    SubtitleColor{
+      color: rgb(102, 224, 112);
+    }
+
+    PriceColor{
+      color: rgb(192, 255, 204);
+    }
+
+    .column {
+  width: 45%;
+  padding: 5px;
+  line-height: 30px;
+  float: left;
+}
+
+.tinycolumn{
+  padding: 5px;
+  line-height: 15px;
+}
+
+.styleselection{
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button{
+  background-color: rgb(98, 255, 143);
+  font-family: "Fredoka One";
+  font-size: 35px;
+  text-shadow: -2px 2px rgb(77, 203, 178);
+  color: rgb(32, 36, 57);
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: rgb(86, 211, 121);
+  font-family: "Fredoka One";
+  font-size: 35px;
+  color: rgb(24, 27, 44);
+  text-shadow: -2px 2px rgb(64, 162, 142);
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+}
+
+td, th{
+  width: 90%; 
+  text-align: center; 
+  border: 1px solid white;
+}
+
+.WashBox{
+  width: 530px;
+  border: 5px solid white;
+  margin: auto;
+}
+
+</style>
+
+<body>
+  <meta name="viewport" content="width=1024">
+  <div class="TextBox">
+    <img src="../Images/NicShirt.png" class="TitleImage" alt="Header Image">
+
+    <div class="Explain">
+<p><h1><TitleColor>Product</TitleColor></h1></p>
+<p><h3>Ini adalah halaman di mana kamu dapat Pre-Order produkku!</h3></p>
+<div class="row">
+  <div class="column">
+
+    <input type="image" src="../Images/LeftArrow.png" style="width: 30px; height: 30px; margin-right: 50px;" onclick="OtherStyle(0)">
+    <stylesize>Style 1</stylesize>
+    <input type="image" src="../Images/RightArrow.png" style="width: 30px; height: 30px; margin-left: 50px;" onclick="OtherStyle(1)">
+
+  <img src="../Images/PestleSilhouetteTshirtStyle1.png" alt="NicDev Doodle T-Shirt" id="productimage" style="width:80%; top:10px ;border-radius: 30px">
+  <div class="row" style="margin-top: 15px;";>
+    <input type="image" src="../Images/PestleSilhouetteTshirtStyle1.png" alt="Front" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;  margin-left: 15px;" onclick="PreviewImage(0)">
+    <input type="image" src="../Images/PestleSilhouetteBack.PNG" alt="Back" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(1)">
+    <input type="image" src="../Images/NicDevDoodleTshirtRealFront.png" alt="Real Front" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(2)">
+    <input type="image" src="../Images/NicDevDoodleTshirtRealBack.png" alt="Real Back" style="width:15%; top:10px ;border-radius: 10px; margin-right: 15px;" onclick="PreviewImage(3)">
+  </div>
+  </div>
+  <div class="column">
+    <div class="tinycolumn">
+    <p><h1><u><producttitle>Pestle Silhouette T-Shirt</producttitle></u></h1></p>
+    <p><h2><PriceColor>Rp. 115.000</PriceColor></h1></p>
+      <p style="font-size: 20px;">(Belum termasuk ongkir)</p>
+    </div>
+
+    <p>Sebuah T-Shirt berisikan silhouette Pestle untuk penggemar berat gamenya</p>
+    <p><TinyExplanation>Diprint secara DTG pada T-Shirt premium cotton, 100% cotton</TinyExplanation></p>
+    <p><a href="https://wa.me/message/J7V5UNXNHDEYF1"><button class="button"> Pre-Order via WhatsApp</button></a></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="margin-left: -100; height: 100%; width: 100%;">
+    <p><hsize>Panduan Size</hsize></p>
+  <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:3px;font-family:"Fredoka One";font-size:18px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:3px;font-family:"Fredoka One";font-size:18px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-2y37{border-color:#ffffff;font-size:24px;text-align:center;vertical-align:top}
+    .tg .tg-hovb{border-color:#ffffff;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-8jgo{border-color:#ffffff;text-align:center;vertical-align:top}
+    </style>
+    <table class="tg" style="table-layout: fixed; width: 70%; height: 110%; margin-left: auto; margin-right: auto;">
+    <colgroup>
+    <col style="width: 140px">
+    <col style="width: 101px">
+    <col style="width: 101px">
+    <col style="width: 101px">
+    <col style="width: 101px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="tg-2y37" rowspan="2">Satuan</th>
+        <th class="tg-2y37" colspan="4">Size</th>
+      </tr>
+      <tr>
+        <th class="tg-hovb">S</th>
+        <th class="tg-hovb">M</th>
+        <th class="tg-hovb">L</th>
+        <th class="tg-hovb">XL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-8jgo">Lebar (cm)</td>
+        <td class="tg-8jgo">47</td>
+        <td class="tg-8jgo">50</td>
+        <td class="tg-8jgo">53</td>
+        <td class="tg-8jgo">56</td>
+      </tr>
+      <tr>
+        <td class="tg-8jgo">Tinggi (cm)</td>
+        <td class="tg-8jgo">67</td>
+        <td class="tg-8jgo">70</td>
+        <td class="tg-8jgo">73</td>
+        <td class="tg-8jgo">75</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+  &nbsp
+  <p><hsize>Panduan Pencucian</hsize></p>
+
+  <div class="WashBox">
+  <p style="font-size: 22=5px;">Suhu air maksimal 40° (Hangat)</p>
+  <p style="font-size: 22=5px;">Cuci dengan warna sejenis</p>
+  <p style="font-size: 22=5px;">Balik pakaian yang akan dicuci</p>
+  <p style="font-size: 22=5px;">Jangan menggunakan pemutih</p>
+  <p style="font-size: 22=5px;">Jangan menggunakan mesin pengering</p>
+  <p style="font-size: 22=5px;">Desain jangan disetrika</p>
+</div>
+</div>
+&nbsp
+<p><h2>@2022 NicDev</h2></p>
+</div>
+</body>
+
+<script>
+  
+  function PreviewImage(i) {
+    var Image = document.getElementById('productimage');
+    
+    if(i == 0)
+    {
+      Image.src = "../Images/PestleSilhouetteTshirtStyle1.png";
+    }else if(i == 1)
+    {
+      
+      Image.src = "../Images/PestleSilhouetteBack.png";
+    }else if(i == 2)
+    {
+      Image.src = "../Images/NicDevDoodleTshirtRealFront.png";
+    }else if(i == 3)
+    {
+      Image.src = "../Images/NicDevDoodleTshirtRealBack.png";
+    }
+  }
+
+  function OtherStyle(i)
+  {
+    if(i == 0)
+    {
+      window.location.href = "http://www.nicdevstudio.com/product/pestlesilhouettetshirtstyle2";
+    }else if(i == 1)
+    {
+      window.location.href = "http://www.nicdevstudio.com/product/pestlesilhouettetshirtstyle2";
+    }
+  }
+
+</script>
