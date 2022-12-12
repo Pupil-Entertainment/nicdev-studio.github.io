@@ -216,11 +216,20 @@
     <img src="Images/NicShirt.png" class="TitleImage" alt="Header Image">
 
     <div class="Explain">
+      <input type="image" src="Images/TCOBTPROMO.png" alt="TCOBT Promo" onclick="TCOBTPROMO()">
 <p><h1><TitleColor>Products</TitleColor></h1></p>
 <p><h3>Ini adalah semua produk yang kamu dapat beli dariku!</h3></p>
 <div class="row">
 
-  <div class="column"style="margin-left: 17%;">
+  <div class="column"style="margin-left: 0%;">
+    <input type="image" src="Images/TCOBTmerchTShirt.png" alt="NicDev Doodle T-Shirt" style="width:80%; border-radius: 30px;" onclick="OpenProduct(2)">
+  <p><a href="/product/pestlesilhouettetshirtstyle1"><producttitle><u>TCOBT T-Shirt</u></producttitle></a></p>
+  <p><h2><PriceColor>Rp. 115.000</PriceColor></h2></p>
+  <p>(Belum termasuk ongkir)</p>
+  <p><a href="/product/pestlesilhouettetshirtstyle1"><button class="button"> More Info</button></a></p>
+  </div>
+
+  <div class="column"style="margin-left: 0%;">
     <input type="image" src="Images/PestleSilhouetteTshirtStyle1.png" alt="NicDev Doodle T-Shirt" style="width:80%; border-radius: 30px;" onclick="OpenProduct(1)">
   <p><a href="/product/pestlesilhouettetshirtstyle1"><producttitle><u>Pestle Silhouette T-Shirt</u></producttitle></a></p>
   <p><h2><PriceColor>Rp. 115.000</PriceColor></h2></p>
@@ -252,7 +261,14 @@
     }else if(i == 1)
     {
       window.location.href = "https://nicdevstudio.com/product/pestlesilhouettetshirtstyle1";
+    }else if(i == 2)
+    {
+      window.location.href = "https://nicdevstudio.com/product/tcobttshirt";
     }
   }
 
+  function TCOBTPROMO()
+  {
+    window.location.href = "http://nicdevstudio.com/product/tcobttshirt";
+  }
 </script>
