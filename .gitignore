@@ -1,1 +1,4 @@
 ignorecase=false
+_pgbackup
+_pginfo
+pinegrow.json
