@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="A page all about teasers for There Can Only be Two" content=""> 
+        <title>TCOBT</title>   
+    </head>     
+    <body>
+        <section class="Images">
+            <div><a onclick="Vandalize()" target="_blank" href="https://store.steampowered.com/app/2236770/There_Can_Only_be_Two/"><img src="Images/TCOBTnewspaper_1.png" alt="Image 1" id="Image 1"></a>
+            </div>
+            <div><a onclick="Vandalize()" target="_blank" href="https://store.steampowered.com/app/2236770/There_Can_Only_be_Two/"><img src="Images/TCOBTnewspaper_2.png" alt="Image 2" id="Image 2"></a>
+            </div>
+            <div><a onclick="Vandalize()" target="_blank" href="https://store.steampowered.com/app/2236770/There_Can_Only_be_Two/"><img src="Images/TCOBTnewspaper_3.png" alt="Image 3" id="Image 3"></a>
+            </div>
+
+            <audio id="marker" src="TCOBTnewspapermarker.mp3"></audio>
+        </section>
+    </body>     
+    <style>body { background-color: #302712; } .Images { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: auto; height: 100vh; } .Images div { text-align: center; } .Images div img { object-fit: contain; width: 100%; height: 100%; } /* Media query for mobile devices */@media screen and (max-width: 768px) { .Images {  grid-template-columns: 1fr;  grid-auto-rows: 1fr;  height: auto; }  .Images div:nth-of-type(1) img {  content: url('Images/TCOBTnewspaper_mobile_1.png'); }  .Images div:nth-of-type(2) img {  content: url('Images/TCOBTnewspaper_mobile_2.png'); }  .Images div:nth-of-type(3) img {  content: url('Images/TCOBTnewspaper_mobile_3.png'); } }</style>     
+
+    <script>
+        function Vandalize()
+        {
+            var img1 = document.getElementById("Image 1")
+            img1.src = "Images/TCOBTnewspaper_1_vandalized.png"
+
+            var img2 = document.getElementById("Image 2")
+            img2.src = "Images/TCOBTnewspaper_2_vandalized.png"
+
+            var img3 = document.getElementById("Image 3")
+            img3.src = "Images/TCOBTnewspaper_3_vandalized.png"
+
+            var audio = new Audio("TCOBTnewspapermarker.mp3");
+            audio.play();
+        }
+    </script>
+</html>
