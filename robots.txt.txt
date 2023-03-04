@@ -1,2 +1,21 @@
 User-agent: *
+Allow: /games
+Allow: /bio
+Allow: /links
+Allow: /nicshirt
+Allow: /portofolio
+Allow: /news
+
+Allow: /archive
+Allow: /emails
+Allow: /others
+Allow: /privacy
+Allow: /products
+Allow: /sponsor
+Allow: /product/*
+
 Disallow: /archive/*
+Disallow: /404
+Disallow: /69
+Disallow: /tcobtnewspaper
+Disallow: /liveloading
