@@ -1,204 +1,114 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html lang="en">
 
 <head> 
-<title> NicDev</title>
-<link rel="shortcut icon" type="image/png" href="Images/Yt Watermark.png">
-</div>
+    <!-- Website Namings and Metadatas -->
+    <title> NicDev</title>  
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YMXYW0PCF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One"> 
 
-  gtag('config', 'G-8YMXYW0PCF');
-</script>
-</head>
+    <meta name="description" content="Play and Explore Awesome Indie Games Made by NicDev"> 
+    <meta name="author" content="NicDev"> 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One">
+    <meta property="og:image" content="https://nicdevstudio.com/Images/BioProfile.png"> 
+    <meta property="og:description" content="Play and Explore Awesome Indie Games Made by NicDev">
+    <meta name="keywords" content="NicDev,NicDev Studio,about,biography,2D games,indie games,adventure games,horror games,Pestle Series,There Can Only be Two,cartoon style,game development,game design,game studio,video games,gaming industry"> 
 
-<meta charset="UTF-8">
-  <meta name="description" content="NicDev's biography">
-  <meta name="keywords" content="NicDev,NicDev Studio,Games,Game,Indie Game,Gamedev,Game Development,Website,Indonesia,Official Website,Nic,Developer,Links,All Links,Link,Social media,Social">
-  <meta name="author" content="NicDev">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://nicdevstudio.com/Images/BioProfile.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=1024"> 
+    <link rel="canonical" href="https://nicdevstudio.com">
+    <meta charset="UTF-8"> 
 
-<style>
-    h1 {
-      font-size: 75px;
-      font-family: "Fredoka One";
-      text-align: center;
-      color: white;
-    }
-    
-    h2 {
-      font-size: 40px;
-      font-family: "Fredoka One";
-      text-align: center;
-    }
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "NicDev Studio",
+        "url": "https:/nicdevstudio.com/",
+        "description": "Play and Explore Awesome Indie Games Made by NicDev",
 
-    h3 {
-        font-size: 25px;
-        font-family: "Fredoka One";
-        text-align: center;
-    }
+        "publisher": {
+          "@type": "Organization",
+          "name": "NicDev Studio",
 
-    .Explain{
-      text-align: left;
-      color: white;
-      font-size: 25px;
-      font-family: "Fredoka One";
-    }
+          "logo": {
+             "@type": "ImageObject",
+             "url": "https://nicdevstudio.com/Images/BioProfile.png",
+             "width": 150,
+             "height": 150
+          }
+        }
+      }
+    </script>
 
-    PageButton{
-      color: white;
-      font-size: 40px;
-      font-family: "Fredoka One";
-      text-align: left;
-    }
+    <!-- Google tag (gtag.js) -->     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YMXYW0PCF"></script>     
 
-    .TitleImage{
-      background-color: #cccccc;
-      width: 100%;
-      height: auto;
-      background-repeat: no-repeat;
-    }
-    
-    .TitleText{
-      text-align: center;
-      color: white;
-    }
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
-    .TextBox{
-  width: 1200px;
-  height: auto;
-  margin: auto;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 25, 25));
-    }
+       gtag('config', 'G-8YMXYW0PCF');
+    </script>
+</head> 
 
-    .ExplainBox{
-  width: 1100px;
-  height: auto;
-  margin: auto;
-  text-align: left;
-      color: white;
-      font-size: 25px;
-      font-family: "Fredoka One";
-    }
-
-    body{
-      background-color: white;
-      background-image: url("Images/NicDevBG.png");
-    }
-
-    video{
-      text-align: center;
-      position: absolute;
-    }
-
-    red{
-      color: rgb(206, 37, 37);
-    }
-
-    Green{
-      color: rgb(43, 228, 83);
-    }
-
-    #ItchColor{
-      color: rgb(236, 95, 102);
-      font-size: 50px;
-    }
-
-    #PlayStoreColor{
-      color: rgb(196, 245, 208);
-      font-size: 50px;
-    }
-
-    #YoutubeColor{
-      color: rgb(236, 33, 33);
-      font-size: 50px;
-    }
-
-    #InstagramColor{
-      color:violet;
-      font-size: 50px;
-    }
-    
-    #DiscordColor{
-      color:rgb(108, 117, 250);
-      font-size: 50px;
-    }
-
-    #KaryakarsaColor{
-      color: rgb(251, 151, 151);
-      font-size: 50px;
-    }
-
-    #GmailColor{
-      color:rgb(27, 186, 235);
-      font-size: 50px;
-    }
-
-    LinkNote{
-      font-size: 125%;
-      bottom: -10px;
-    }
-
-    SubtitleColor{
-      color: rgb(102, 224, 112);
-    }
-
-    .ProfilePicture{
-      background-image: url(Images/BioProfile.png);
-      height: 200px;
-      width: 200px;
-      left: 40%;
-      top: 20px;
-      position: relative;
-    }
-
-    Purple{
-      color: rgb(226, 43, 226);
-    }
-
-    Orange{
-      color:rgb(235, 162, 26)
-    }
-
-    Blue{
-      color:rgb(115, 115, 241);
-    }
-
-    Blue2{
-      color:rgb(69, 196, 255);
-    }
-
-    Pink{
-      color:rgb(246, 64, 246);
-    }
-
-    .BackButton{
-      text-align: left;
-    }
-
-</style>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
 <body>
-  <meta name="viewport" content="width=1024">
   <div class="TextBox">
     <img loading="lazy" src="Images/WebsiteBackground.png" class="TitleImage" alt="Header Image">
+
+    <!--Titles-->
     <p><h1>Bio</h1></p>
     <img loading="lazy" src="Images/BioProfile.png" class="ProfilePicture" alt="Profile Picture">
     <div class="ExplainBox">
-<p>Hi! I'm Nicholas Christian, or better known as NicDev. I live in Jakarta, Indonesia and born on May 16th, 2008. I love to make games and other things related to gamedev! I also like to document them in my Youtube channel, NicDev. Besides games, I also known for my art skills on making posters and illustrations. I'm currently making my first commercial video game called "There Can Only Be Two" or "TCOBT" in short. It is an RPG-adventure game where you play as a knight named Rady trying to become the a kingdom guard, but things won't go as plan. The game is still far from finished, but I think a free demo of the game will come this year (2023). That's all there is to know about me, thanks for reading!</p>
-<p><h1>Skills</h1></p>
-<p><Orange>Unity</Orange> and <Purple>C#: </Purple>90%</p>
-<p><Blue>Adobe Photoshop</Blue>: 90%</p>
-<p><Pink>Adobe Premier Pro:</Pink> 85%</p>
-<p><Blue2>DaVinci Resolve:</Blue2> 80%</p>
-<p><Red>Html</Red> and <Green>CSS:</Green> 60%</p>
-<p><h2>@2023 NicDev</h2></p>
-</div>
+      <!--Contents-->
+      <p>Hi! I'm Nicholas Christian, or better known as NicDev. I live in Jakarta, Indonesia and born on May 16th, 2008. I love to make games and other things related to gamedev! I also like to document them in my Youtube channel, NicDev. Besides games, I also known for my art skills on making posters and illustrations. I'm currently making my first commercial video game called "There Can Only Be Two" or "TCOBT" in short. It is an RPG-adventure game where you play as a knight named Rady trying to become the a kingdom guard, but things won't go as plan. The game is still far from finished, but I think a free demo of the game will come this year (2023). That's all there is to know about me, thanks for reading!</p>
+
+      <!--Skills-->
+      <p><h1>Skills</h1></p>
+      <p><Orange>Unity</Orange> and <Purple>C#: </Purple>90%</p>
+      <p><Blue>Adobe Photoshop</Blue>: 90%</p>
+      <p><Pink>Adobe Premier Pro:</Pink> 85%</p>
+      <p><Blue2>DaVinci Resolve:</Blue2> 80%</p>
+      <p><Red>Html</Red> and <Green>CSS:</Green> 60%</p>
+      
+      <p><h2>@2023 NicDev</h2></p>
+  </div>
 </body>
+
+<style>
+  h1 { font-size: 75px; font-family: "Fredoka One"; text-align: center; color: white; }
+  h2 { font-size: 40px; font-family: "Fredoka One"; text-align: center; }
+  h3 { font-size: 25px; font-family: "Fredoka One"; text-align: center; }
+  .Explain{ text-align: left; color: white; font-size: 25px; font-family: "Fredoka One"; }
+  PageButton{ color: white; font-size: 40px; font-family: "Fredoka One"; text-align: left; }
+  .TitleImage{ background-color: #cccccc; width: 100%; height: auto; background-repeat: no-repeat; }
+  .TitleText{ text-align: center; color: white; }
+  .TextBox{ width: 1200px; height: auto; margin: auto; background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 25, 25)); }
+  .ExplainBox{ width: 1100px; height: auto; margin: auto; text-align: left; color: white; font-size: 25px; font-family: "Fredoka One"; }
+  body{ background-color: white; background-image: url("Images/NicDevBG.png"); }
+  video{ text-align: center; position: absolute; }
+  red{ color: rgb(206, 37, 37); }
+  Green{ color: rgb(43, 228, 83); }
+  #ItchColor{ color: rgb(236, 95, 102); font-size: 50px; }
+  #PlayStoreColor{ color: rgb(196, 245, 208); font-size: 50px; }
+  #YoutubeColor{ color: rgb(236, 33, 33); font-size: 50px; }
+  #InstagramColor{ color: violet; font-size: 50px; }
+  #DiscordColor{ color: rgb(108, 117, 250); font-size: 50px; }
+  #KaryakarsaColor{ color: rgb(251, 151, 151); font-size: 50px; }
+  #GmailColor{ color: rgb(27, 186, 235); font-size: 50px; }
+  LinkNote{ font-size: 125%; bottom: -10px; }
+  SubtitleColor{ color: rgb(102, 224, 112); }
+  .ProfilePicture{ background-image: url(Images/BioProfile.png); height: 200px; width: 200px; left: 40%; top: 20px; position: relative; }
+  Purple{ color: rgb(226, 43, 226); }
+  Orange{ color: rgb(235, 162, 26); }
+  Blue{ color: rgb(115, 115, 241); }
+  Blue2{ color: rgb(69, 196, 255); }
+  Pink{ color: rgb(246, 64, 246); }
+  .BackButton{ text-align: left; }
+</style>
+</html>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>

@@ -1,367 +1,112 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html lang="id">
 
 <head> 
+    <!-- Website Namings and Metadatas -->
+    <title>NicShirt</title>  
 
-  <script type="text/javascript">
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var country_code = this.responseText.replace(/(\r\n|\n|\r)/gm,"").split('loc=');
-        country_code = country_code[1].split('tls=');
-        country_code = country_code[0];
-        
-        if(country_code != "ID")
-        {
-          alert("Sorry, but NicShirt isn't available in your country yet. (" + country_code + ")");
-          window.location.replace("https://nicdevstudio.com/");
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One"> 
+
+    <meta name="description" content="Get T-Shirts and Merch Made by NicDev!"> 
+    <meta name="author" content="NicDev"> 
+
+    <meta property="og:image" content="https://nicdevstudio.com/Images/BioProfile.png"> 
+    <meta property="og:description" content="Get T-Shirts and Merch Made by NicDev!">
+    <meta name="keywords" content="NicDev,NicDev Studio,NicShirt,t-shirt,merch,2D games,indie games,adventure games,horror games,Pestle Series,There Can Only be Two,cartoon style,game development,game design,game studio,video games,gaming industry"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=1024"> 
+    <link rel="canonical" href="https://nicdevstudio.com">
+    <meta charset="UTF-8"> 
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "NicDev Studio",
+        "url": "https:/nicdevstudio.com/",
+        "description": "Play and Explore Awesome Indie Games Made by NicDev",
+
+        "publisher": {
+          "@type": "Organization",
+          "name": "NicDev Studio",
+
+          "logo": {
+             "@type": "ImageObject",
+             "url": "https://nicdevstudio.com/Images/BioProfile.png",
+             "width": 150,
+             "height": 150
+          }
         }
       }
-    };
-    //OPEN HTTP Request
-    xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
-    xhttp.send();
-  </script>
-  
-<title> NicDev</title>
-<link rel="shortcut icon" type="image/png" href="Images/Yt Watermark.png">
+    </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YMXYW0PCF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!--Only in Indonesia-->
+    <script type="text/javascript">
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var country_code = this.responseText.replace(/(\r\n|\n|\r)/gm,"").split('loc=');
+          country_code = country_code[1].split('tls=');
+          country_code = country_code[0];
+          
+          if(country_code != "ID")
+          {
+            alert("Sorry, but NicShirt isn't available in your country yet. (" + country_code + ")");
+            window.location.replace("https://nicdevstudio.com/");
+          }
+        }
+      };
 
-  gtag('config', 'G-8YMXYW0PCF');
-</script>
+      xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+      xhttp.send();
+    </script>
 
-</head>
+    <!-- Google tag (gtag.js) -->     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YMXYW0PCF"></script>     
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One">
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
-<meta charset="UTF-8">
-  <meta name="description" content="NicDev's merchandise campaign called NicShirt">
-  <meta name="keywords" content="NicDev, NicShirt, NicDev Merch, Merchandise, T-Shirt, NicDev Studio,Games,Game,Indie Game,Gamedev,Game Development,Website,Indonesia,Official Website,Nic,Developer,Product, Merch, Merchandise, Shirt, NicShirt">
-  <meta name="author" content="NicDev">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://nicdevstudio.com/Images/BioProfile.png">
+       gtag('config', 'G-8YMXYW0PCF');
+    </script>
+</head> 
 
-<style>
-  h0{
-    font-size: 100px;
-    font-family: "Fredoka One";
-      text-align: center;
-  }
-    h1 {
-      font-size: 75px;
-      font-family: "Fredoka One";
-      text-align: center;
-    }
-    
-    h2 {
-      font-size: 40px;
-      font-family: "Fredoka One";
-      text-align: center;
-    }
-
-    h3 {
-        font-size: 25px;
-        font-family: "Fredoka One";
-        text-align: center;
-    }
-
-    hcountdown{
-      font-size: 35px;
-        font-family: "Fredoka One";
-        text-align: center;
-    }
-    
-
-    Subtitle{
-      font-size: 25px;
-    }
-
-    .Explain{
-      text-align: center;
-      color: white;
-      font-family: "Fredoka One";
-    }
-
-    HowItWorksTitle{
-      font-size: 50px;
-    }
-
-    .Instructions{
-      font-size: 30px;
-      text-align: left;
-      color: white;
-      font-family: "Fredoka One";
-    }
-
-    .TitleImage{
-      background-image: url("Images/WebsiteBackground.png");
-      background-color: #cccccc;
-      width: 100%;
-      height: auto;
-      background-repeat: no-repeat;
-    }
-    
-    .TitleText{
-      text-align: center;
-      color: white;
-    }
-
-    .TextBox{
-  width: 1200px;
-  height: auto;
-  margin: auto;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 25, 25));
-    }
-
-    .ExplainBox{
-  width: 1000px;
-  height: auto;
-  margin: auto;
-    }
-
-    .countdown{
-      text-align: center;
-      color: white;
-      font-size: 20px;
-      font-family: "Fredoka One";
-      line-height: 6px;
-    }
-
-    .target{
-      text-align: center;
-      color: white;
-      font-size: 20px;
-      font-family: "Fredoka One";
-      line-height: 13px;
-    }
-
-    body{
-      background-color: white;
-      background-image: url("Images/NicDevBG.png");
-    }
-
-    video{
-      text-align: center;
-      position: absolute;
-    }
-
-    red{
-      color: red;
-    }
-
-    Orange{
-      color: orange;
-    }
-
-    #LinkColor{
-      color: rgb(234, 234, 234);
-    }
-
-    #GamesColor{
-      color: rgb(255, 196, 86);
-    }
-
-    #NewsColor{
-      color: rgb(237, 135, 255);
-    }
-
-    #BioColor{
-      color: rgb(110, 247, 110);
-    }
-
-    #BlogColor{
-      color: rgb(64, 164, 223);
-    }
-
-    #QnAColor{
-      color: rgb(223, 54, 54);
-    }
-
-    #ArchieveColor{
-      color: rgb(144, 176, 145);
-    }
-
-    CountdownTitle{
-      color: rgb(193, 255, 193);
-      font-size: 45px;
-    }
-
-    CountdownIndex{
-      font-size: 45px;
-    }
-
-    CountdownSubtitle{
-      color: rgb(213, 255, 237);
-    }
-
-    #GalleryColor{
-      color: rgb(211, 211, 54);
-    }
-
-    NewsletterColor{
-      color: rgb(253, 202, 135);
-    }
-
-    #OthersColor{
-      color: rgb(254, 255, 175);
-    }
-
-    #NotFinished{
-      color: rgb(255, 172, 172);
-    }
-
-    #Finished{
-      color: rgb(176, 255, 185);
-    }
-
-    input[type=Field], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-    }
-
-input[type=Field] {
-  width: 70%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(42, 32, 20);
-  font-size: 150%;
-  font-family: "Fredoka One";
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type=Field]:hover {
-  background-color: rgb(237, 237, 237);
-}
-
-    input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-    }
-
-input[type=submit] {
-  width: 70%;
-  background-color: rgb(253, 202, 135);
-  color: rgb(42, 32, 20);
-  font-size: 150%;
-  font-family: "Fredoka One";
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: rgb(165, 123, 73);
-}
-
-.button{
-  background-color: rgb(139, 159, 255);
-  font-family: "Fredoka One";
-  font-size: 35px;
-  text-shadow: -2px 2px rgb(95, 104, 148);
-  color: rgb(32, 36, 57);
-  width: 40%;
-  height: 70px;
-  border-radius: 5px;
-}
-
-.button:hover{
-  background-color: rgb(115, 131, 211);
-  font-family: "Fredoka One";
-  font-size: 35px;
-  color: rgb(24, 27, 44);
-  text-shadow: -2px 2px rgb(81, 88, 124);
-  width: 40%;
-  height: 70px;
-  border-radius: 5px;
-}
-
-InstructionNumbers{
-  color: rgb(100, 228, 134);
-}
-
-#HowItWorksTitleColor{
-  color: rgb(255, 227, 174);
-}
-
-redtitle{
-  color: rgb(255, 133, 133);
-}
-
-orangetitle{
-  color: rgb(255, 212, 133);
-}
-
-yellowtitle{
-  color: rgb(251, 255, 133);
-}
-
-hijautitle{
-  color: rgb(133, 255, 139);
-}
-
-bluegreentitle{
-  color: rgb(133, 255, 247);
-}
-
-bluetitle{
-  color: rgb(133, 235, 255);
-}
-
-pinktitle{
-  color: rgb(251, 133, 255);
-}
-
-pink2title{
-  color: rgb(255, 133, 204);
-}
-
-</style>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
 <body>
-  <meta name="viewport" content="width=1024">
   <div class="TextBox">
     <img loading="lazy" src="Images/NicShirt.png" class="TitleImage" alt="Header Image">
+
     <div class="ExplainBox">
-    <div class="TitleText">
-      <h1><redtitle>N</redtitle><orangetitle>i</orangetitle><yellowtitle>c</yellowtitle><hijautitle>S</hijautitle><bluegreentitle>h</bluegreentitle><bluetitle>i</bluetitle><pinktitle>r</pinktitle><pink2title>t</pink2title></h1>
-<div class="Explain"><Subtitle>Sebuah sistem pre-order merchandise di mana kamu bisa mendapatkan baju yang didesign oleh diriku!</Subtitle>
-  <p>
-    <CountdownTitle>Kampanye Pre-Order </CountdownTitle><CountdownIndex>ke-2</CountdownIndex>
-  </p>
-    <hcountdown>berakhir dalam</hcountdown>
+      <div class="TitleText">
+         <!--Titles-->
+         <h1><redtitle>N</redtitle><orangetitle>i</orangetitle><yellowtitle>c</yellowtitle><hijautitle>S</hijautitle><bluegreentitle>h</bluegreentitle><bluetitle>i</bluetitle><pinktitle>r</pinktitle><pink2title>t</pink2title></h1>
+        
+         <div class="Explain">
+          <!--Summary-->
+          <Subtitle>Sebuah sistem pre-order merchandise di mana kamu bisa mendapatkan baju yang didesign oleh diriku!</Subtitle>
+          <p><CountdownTitle>Kampanye Pre-Order </CountdownTitle><CountdownIndex>ke-2</CountdownIndex></p>
+          <hcountdown>berakhir dalam</hcountdown>
 
-<div class="countdown">
-    <h1><div class="Countdown"> 00:00:00:00</div></h1>
-    <hcountdown><CountdownSubtitle>Hari : Jam : Menit : Detik</CountdownSubtitle></hcountdown>
-    <script src="Countdown.js"></script>
-    <hcountdown><p><u>4 Maret 2023</u></p></hcountdown>
+           <div class="countdown">
+            <!--Timer-->
+             <h1>00:00:00:00</h1>
+             <hcountdown><CountdownSubtitle>Hari : Jam : Menit : Detik</CountdownSubtitle></hcountdown>
+             <script src="Countdown.js"></script>
+            <hcountdown><p><u>4 Maret 2023</u></p></hcountdown>
 
-  </div>
+           </div>
+         </div>
+      </div>
+    </div>
 
   &nbsp
 
-
   <div class="target">
+    <!--Targets & Status-->
     <h1 id="NotFinished">0/3</h1>
     <hcountdown>Baju telah di Pre-Order!</hcountdown>
     <p><a href="products"><button class="button"> Pre-Order Baju!</button></a></p>
@@ -371,26 +116,83 @@ pink2title{
   &nbsp
   
   <div class="Explain">
+    <!--How it Works Title-->
     -------------------------------------------------------------------------------------------------------------------
-<h2 id="HowItWorksTitleColor"><HowItWorksTitle>Bagaimana Cara Kerjanya?</HowItWorksTitle></h2>
+    <h2 id="HowItWorksTitleColor"><HowItWorksTitle>Bagaimana Cara Kerjanya?</HowItWorksTitle></h2>
   </div>
 
   &nbsp
 
   <div class="Instructions">
+    <!--Instructions-->
     <p><InstructionNumbers>1)</InstructionNumbers>. Pesan bajunya di <a href="products" style="color: rgb(108, 255, 135)">sini</a> dan contact aku via <a href="https://wa.me/message/J7V5UNXNHDEYF1" style="color: rgb(108, 255, 135)">whatsapp</a>.</p>
     <p><InstructionNumbers>2)</InstructionNumbers>. Ketika kamu menghubungiku di whatsapp, kamu harus mengisi beberapa form dan info seperti nama produk, nama asli, alamat, pembayaran, dll.</p>
     <p><InstructionNumbers>3)</InstructionNumbers>. Ketika countdown halaman ini telah berubah menjadi 00:00:00:00 (Deadline Pre-Order) atau target pre-order telah terpenuhi, pelanggan yang sudah pre-order bajunya akan diberitahukan via whatsapp mengenai pengiriman bajunya.</p>
-  </div>
 
-<p><h2>@2023 NicDev</h2></p>
+    <p><h2>@2023 NicDev</h2></p>
+  </div>
 </body>
 
-<script>
-  
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-  function TCOBTPROMO()
-  {
-    window.location.href = "http://nicdevstudio.com/product/tcobttshirt";
-  }
-</script>
+<style>
+  h0{font-size: 100px; font-family: "Fredoka One"; text-align: center;}
+  h1{font-size: 75px; font-family: "Fredoka One"; text-align: center;}
+  h2{font-size: 40px; font-family: "Fredoka One"; text-align: center;}
+  h3{font-size: 25px; font-family: "Fredoka One"; text-align: center;}
+  hcountdown{font-size: 35px; font-family: "Fredoka One"; text-align: center;}
+
+  Subtitle{font-size: 25px;}
+  .Explain{text-align: center; color: white; font-family: "Fredoka One";}
+  HowItWorksTitle{font-size: 50px;}
+  .Instructions{font-size: 30px; text-align: left; color: white; font-family: "Fredoka One"; margin-left: 5%; margin-right: 5%;}
+  .TitleImage{background-image: url("Images/WebsiteBackground.png"); background-color: #cccccc; width: 100%; height: auto; background-repeat: no-repeat;}
+  .TitleText{text-align: center; color: white;}
+  .TextBox{width: 1200px; height: auto; margin: auto; background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 25, 25));}
+  .ExplainBox{width: 1000px; height: auto; margin: auto;}
+  .countdown{text-align: center; color: white; font-size: 20px; font-family: "Fredoka One"; line-height: 6px;}
+  .target{text-align: center; color: white; font-size: 20px; font-family: "Fredoka One"; line-height: 13px;}
+
+  body{background-color: white; background-image: url("Images/NicDevBG.png");}
+  video{text-align: center; position: absolute;}
+
+  red{color: red;}
+  Orange{color: orange;}
+
+  #LinkColor{color: rgb(234, 234, 234);}
+  #GamesColor{color: rgb(255, 196, 86);}
+  #NewsColor{color: rgb(237, 135, 255);}
+  #BioColor{color: rgb(110, 247, 110);}
+  #BlogColor{color: rgb(64, 164, 223);}
+  #QnAColor{color: rgb(223, 54, 54);}
+  #ArchieveColor{color: rgb(144, 176, 145);}
+  CountdownTitle{color: rgb(193, 255, 193); font-size: 45px;}
+  CountdownIndex{font-size: 45px;}
+  CountdownSubtitle{color: rgb(213, 255, 237);}
+  #GalleryColor{color: rgb(211, 211, 54);}
+  NewsletterColor{color: rgb(253, 202, 135);}
+  #OthersColor{color: rgb(254, 255, 175);}
+  #NotFinished{color: rgb(255, 172, 172);}
+  #Finished{color: rgb(176, 255, 185);}
+
+  input[type=Field], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;}
+  input[type=Field]{width: 70%; background-color: rgb(255, 255, 255); color: rgb(42, 32, 20); font-size: 150%; font-family: "Fredoka One"; padding: 14px 20px; margin: 8px 0; border: none;border-radius: 5px;cursor: pointer}
+  input[type=submit]:hover {background-color: rgb(165, 123, 73);}
+  .button{background-color: rgb(139, 159, 255);font-family: "Fredoka One";font-size: 35px;text-shadow: -2px 2px rgb(95, 104, 148);color: rgb(32, 36, 57);width: 40%;height: 70px;border-radius: 5px;}
+
+  .button:hover{ background-color: rgb(115, 131, 211); font-family: "Fredoka One"; font-size: 35px; color: rgb(24, 27, 44); text-shadow: -2px 2px rgb(81, 88, 124); width: 40%; height: 70px; border-radius: 5px; }
+  InstructionNumbers{ color: rgb(100, 228, 134); }
+  #HowItWorksTitleColor{ color: rgb(255, 227, 174); }
+  redtitle{ color: rgb(255, 133, 133); }
+  orangetitle{ color: rgb(255, 212, 133); }
+  yellowtitle{ color: rgb(251, 255, 133); }
+  hijautitle{ color: rgb(133, 255, 139); }
+  bluegreentitle{ color: rgb(133, 255, 247); }
+  bluetitle{ color: rgb(133, 235, 255); }
+  pinktitle{ color: rgb(251, 133, 255); }
+  pink2title{ color: rgb(255, 133, 204); }
+
+</style>
+</html>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
