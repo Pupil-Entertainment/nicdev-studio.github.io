@@ -5,10 +5,10 @@ Allow: /links
 Allow: /nicshirt
 Allow: /portofolio
 Allow: /news
+Allow: /others
 
 Allow: /archive
 Allow: /emails
-Allow: /others
 Allow: /privacy
 Allow: /products
 Allow: /sponsor
