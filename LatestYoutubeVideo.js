@@ -13,6 +13,7 @@ gapi.load('client', function() {
       });
    }).then(function(response) {
       var videoId = response.result.items[0].id.videoId;
+      console.log(videoId);
       var iframe = document.querySelector('#latest-video');
       iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId);
    }, function(reason) {
