@@ -19,3 +19,4 @@ Disallow: /404
 Disallow: /69
 Disallow: /tcobtnewspaper
 Disallow: /liveloading
+Disallow: /tcobtnewspaper
