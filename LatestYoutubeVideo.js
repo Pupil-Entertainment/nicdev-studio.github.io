@@ -1,18 +1,21 @@
-$(function() {  
-   var API_KEY = 'AIzaSyBUSDnWWT4LE-idCJjdlyRVUAxZOPKpCSI';
-   var CHANNEL_ID = 'UCnR8Z34MIYgugRLunp9hJDQ';
-
-   var GOOGLE_API_URL = 'https://www.googleapis.com/youtube/v3/channelItems?part=id%2C+snippet%2C+contentDetails&channelId='+CHANNEL_ID+ '&key=' + API_KEY + '&callback=showVideos';
-
-   $.ajax({
-    url: GOOGLE_API_URL,
-    dataType: 'jsonp',
-    crossDomain: true
-   });
-
-   window.showVideos = function(data) {
-    if (data.items && data.items.length > 0) {
-       $("#latest-video").html('<iframe width="640" height="360" src="http://www.youtube.com/embed/'+data.items[0].contentDetails.videoId+'" frameborder="0" allowfullscreen></iframe>');
+const loadVideo = (iframe) => {
+        const cid = "UCnR8Z34MIYgugRLunp9hJDQ";
+        const channelURL = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`)
+        const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${channelURL}`;
+   
+        fetch(reqURL)
+            .then(response => response.json())
+            .then(result => {
+              console.log(result)
+                const videoNumber = iframe.getAttribute('vnum')
+                const link = result.items[videoNumber].link;
+                const id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", `https://youtube.com/embed/${id}?controls=0&autoplay=1`);
+            })
+            .catch(error => console.log('error', error));
     }
-   }
-});
+    
+    const iframes = document.getElementsByClassName('latest-video');
+    for (let i = 0, len = iframes.length; i < len; i++) {
+        loadVideo(iframes[i]);
+    }
