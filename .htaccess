@@ -6,9 +6,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-<Directory "/website/nicdev-studio.github.io/flooruler/pnp">
+<Directory "/flooruler/pnp">
     AuthType Basic
     AuthName "Restricted Area"
-    AuthUserFile /website/nicdev-studio.github.io/flooruler/pnp/.htpasswd
+    AuthUserFile /flooruler/pnp/.htpasswd
     Require valid-user
 </Directory>
